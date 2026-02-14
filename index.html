@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Look Up Foundation Ltd - Australian Charity</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1e5c3f 0%, #2d8659 100%);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        
+        nav h1 {
+            font-size: 1.8rem;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+        
+        nav a:hover {
+            opacity: 0.8;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #1e5c3f 0%, #2d8659 100%);
+            color: white;
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+        
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #f39c12;
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        
+        .cta-button:hover {
+            background: #e67e22;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .missions {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            padding: 4rem 0;
+        }
+        
+        .mission-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 5px solid #1e5c3f;
+        }
+        
+        .mission-card h3 {
+            color: #1e5c3f;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .impact {
+            background: #ecf0f1;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .impact-items {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .impact-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .impact-item h4 {
+            color: #1e5c3f;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+        
+        @media (max-width: 768px) {
+            .missions, .impact-items {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero h2 {
+                font-size: 2rem;
+            }
+            
+            nav ul {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>🌿 Look Up Foundation Ltd</h1>
+            <ul>
+                <li><a href="#mission">Our Mission</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#donate">Donate</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h2>Looking Up for Australian Communities & Environment</h2>
+        <p>Empowering lower-income communities while protecting our unique native environment</p>
+        <a href="#donate" class="cta-button">Support Our Mission</a>
+    </section>
+    
+    <section id="mission" class="container">
+        <h2 style="text-align: center; color: #1e5c3f; margin: 3rem 0;">Our Twin Missions</h2>
+        <div class="missions">
+            <div class="mission-card">
+                <h3>🤝 Community Strength</h3>
+                <p>We provide resources, training, and opportunities to Australian lower-income communities, helping break cycles of poverty and build sustainable futures.</p>
+            </div>
+            <div class="mission-card">
+                <h3>🌳 Environmental Stewardship</h3>
+                <p>Protecting Australia's irreplaceable native environment through conservation, education, and community-led environmental projects.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="impact" class="impact">
+        <div class="container">
+            <h2 style="color: #1e5c3f;">Our Impact</h2>
+            <div class="impact-items">
+                <div class="impact-item">
+                    <h4>15,000+</h4>
+                    <p>Individuals Supported</p>
+                </div>
+                <div class="impact-item">
+                    <h4>50+</h4>
+                    <p>Community Programs</p>
+                </div>
+                <div class="impact-item">
+                    <h4>2,000+</h4>
+                    <p>Hectares Protected</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="donate" class="container" style="padding: 4rem 0; text-align: center;">
+        <h2 style="color: #1e5c3f; margin-bottom: 2rem;">Make a Difference Today</h2>
+        <a href="#" class="cta-button">Donate Now</a>
+        <p style="margin-top: 2rem; color: #666;">Look Up Foundation Ltd is an Australian Registered Charity. ABN: [Your ABN]</p>
+    </section>
+    
+    <footer id="contact">
+        <p>&copy; 2024 Look Up Foundation Ltd. All rights reserved.</p>
+        <p>Email: info@lookupfoundation.org.au | Phone: 1800 LOOKUP</p>
+    </footer>
+</body>
+</html>
