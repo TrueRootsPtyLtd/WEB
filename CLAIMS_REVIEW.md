@@ -28,9 +28,9 @@ Source links below are pinned to the reviewed commit so line references remain s
 
 The existing colours, CSS, responsive rules, cards, section IDs, links and controls are retained. No replacement impact numbers, legal identifiers, tax-deductibility claims, payment integrations or deployment configuration are introduced. No claim is made that registration is pending or that the organisation is a demo.
 
-The retained “Look Up Foundation Ltd” name, contact details and mission/brand language are not verified by this review. Confirm the entity name and contact details before publication. Existing donation links are placeholders (`#` on the root page and an in-page link on the second page). They are not evidence of a functioning donation service. Existing smooth-scroll handling of bare `#` links in the second page is outside this copy/claims change.
+The retained “Look Up Foundation Ltd” name, contact details and mission/brand language are not verified by this review. Confirm the entity name and contact details before publication. Existing donation links are placeholders (`#` on the root page and an in-page link on the second page). They are not evidence of a functioning donation service. The existing bare-`#` smooth-scroll error was corrected in the 30 October follow-up; see [NAVIGATION_REVIEW.md](NAVIGATION_REVIEW.md) for tests, remaining issues and browser-testing limits.
 
-## Validation
+## Initial claims-change validation (27 October)
 
 - JavaScript syntax check passed.
 - Original HTML elements and attributes compared, allowing only added explanatory paragraphs and the status accessibility attribute; existing layout classes, IDs, links and controls were retained.
@@ -40,3 +40,4 @@ The retained “Look Up Foundation Ltd” name, contact details and mission/bran
 - Browser rendering was attempted with Playwright but could not run because its Chromium executable is not installed. Desktop and mobile visual review remains outstanding.
 
 This is a proposal for review. Main has not been changed, and no deployment has been requested or performed. Obtain the owner's approval before deployment.
+
